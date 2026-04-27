@@ -3,9 +3,10 @@
 :root {
     --bg: #ffffff;
     --bg-alt: #f4f7fa;
-    --header-bg: #0b1e3d;
-    --accent: #2d9da4;
-    --accent-light: #3ab8bf;
+    --header-bg: #0a1520;
+    --accent: #7EC4B8;
+    --accent-dark: #5AADA0;
+    --gold: #C8B87A;
     --text: #1a202c;
     --text-light: #4a5568;
     --text-muted: #718096;
@@ -20,7 +21,7 @@ body {
     line-height: 1.6;
 }
 
-a { color: var(--accent); text-decoration: none; }
+a { color: var(--accent-dark); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* Nav */
@@ -44,36 +45,44 @@ a:hover { text-decoration: underline; }
 }
 .site-nav .logo:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 24px; }
-.nav-links a { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
+.nav-links a { color: rgba(255,255,255,0.55); font-size: 0.9rem; }
 .nav-links a:hover { color: #fff; text-decoration: none; }
 
 /* Hero */
 .hero {
-    background: linear-gradient(150deg, #0b1e3d 0%, #0d3060 55%, #0f4a6a 100%);
-    padding: 72px 20px 80px;
+    background: radial-gradient(ellipse at 50% 40%, #162535 0%, #0a1520 55%, #070D16 100%);
+    padding: 64px 20px 80px;
     text-align: center;
     color: #fff;
+}
+.hero-icon {
+    width: 108px;
+    height: 108px;
+    border-radius: 24%;
+    display: block;
+    margin: 0 auto 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px rgba(126,196,184,0.12);
 }
 .hero h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
     line-height: 1.15;
     letter-spacing: -0.03em;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .hero p {
     font-size: 1.1rem;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255,255,255,0.7);
     max-width: 520px;
     margin: 0 auto 36px;
 }
 .badge-placeholder {
     display: inline-block;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(126,196,184,0.1);
+    border: 1px solid rgba(126,196,184,0.25);
     border-radius: 10px;
     padding: 12px 28px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.5);
     font-size: 0.85rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -149,14 +158,14 @@ a:hover { text-decoration: underline; }
 /* Footer */
 footer {
     background: var(--header-bg);
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.4);
     padding: 36px 20px;
     text-align: center;
     font-size: 0.85rem;
 }
 .footer-links { margin-bottom: 10px; display: flex; justify-content: center; flex-wrap: wrap; gap: 0; }
-.footer-links a { color: rgba(255,255,255,0.65); padding: 0 14px; }
-.footer-links a + a { border-left: 1px solid rgba(255,255,255,0.15); }
+.footer-links a { color: rgba(255,255,255,0.6); padding: 0 14px; }
+.footer-links a + a { border-left: 1px solid rgba(255,255,255,0.12); }
 .footer-links a:hover { color: #fff; text-decoration: none; }
 
 /* Prose (privacy / support / terms pages) */
@@ -191,5 +200,5 @@ footer {
     margin-bottom: 14px;
 }
 .prose li { margin-bottom: 6px; }
-.prose a { color: var(--accent); }
+.prose a { color: var(--accent-dark); }
 .prose strong { color: var(--text); }

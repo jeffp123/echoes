@@ -23,7 +23,24 @@
     <h1>Support</h1>
     <p class="meta">Echoes for iOS &nbsp;·&nbsp; Made by Jeff Peck</p>
 
-    <p>Have a question or ran into a problem? Email <a href="mailto:jeffrey.peck@icloud.com">jeffrey.peck@icloud.com</a> and I'll get back to you.</p>
+    <p>Have a question or ran into a problem? Fill out the form below and I'll get back to you.</p>
+
+    <form class="contact-form" action="https://formspree.io/f/mvzdjbar" method="POST">
+        <input type="hidden" name="_subject" value="Echoes App Support">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
 
     <h2>Frequently asked questions</h2>
 

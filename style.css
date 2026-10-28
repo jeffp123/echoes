@@ -176,8 +176,8 @@ a:hover { text-decoration: underline; }
 /* Screenshots */
 .screenshots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 @media (max-width: 600px) { .screenshots { grid-template-columns: 1fr; max-width: 280px; margin: 0 auto; } }
-.screenshots figure { margin: 0; text-align: center; }
-.screenshots img { width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--border); }
+.screenshots figure { margin: 0; text-align: center; min-width: 0; }
+.screenshots img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--border); }
 .screenshots figcaption { margin-top: 8px; font-size: 0.875rem; color: var(--text-light); }
 
 /* Pricing */
@@ -188,6 +188,18 @@ a:hover { text-decoration: underline; }
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 10px;
+}
+.price-card-featured { position: relative; border: 2px solid var(--accent); }
+.price-badge {
+    position: absolute;
+    top: -11px;
+    right: 16px;
+    background: var(--accent);
+    color: #0a1520;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 999px;
 }
 .price-card h3 { font-size: 1rem; font-weight: 600; }
 .price-card .price { font-size: 1.5rem; font-weight: 700; margin: 4px 0 8px; color: var(--text); }

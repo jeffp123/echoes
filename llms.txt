@@ -10,7 +10,7 @@
 ## Pages
 
 - [Home](https://echoesdaily.app/): how it works, the philosophy, features, pricing, FAQ
-- [Echoes vs a journal (and vs habit trackers)](https://echoesdaily.app/vs/)
+- [Echoes vs a journal, habit tracker, to-do list, or notes app](https://echoesdaily.app/vs/)
 - [Changelog](https://echoesdaily.app/changelog/)
 - [Privacy Policy](https://echoesdaily.app/privacy/)
 - [Support](https://echoesdaily.app/support/)

@@ -315,3 +315,12 @@ footer {
     transition: background 0.15s;
 }
 .contact-form button:hover { background: var(--accent-dark); }
+
+/* Breadcrumb and related links (inner pages) */
+.prose .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px; }
+.prose .breadcrumb a { display: inline-block; padding: 12px 0; }
+.related { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+.related h2 { margin-top: 0; }
+.related ul { list-style: none; padding-left: 0; }
+.related li { margin-bottom: 0; }
+.related a { display: inline-block; padding: 10px 0; }

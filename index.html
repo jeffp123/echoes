@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echoes Daily - Notes to your future self, a daily reminder app</title>
+    <title>Echoes Daily: notes to your future self, daily reminder app</title>
     <meta name="description" content="A personal app for iPhone, iPad, and Mac for the things worth remembering. Build a library of Echoes and get a short daily list drawn from your own words.">
     <link rel="canonical" href="https://echoesdaily.app/">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Echoes Daily">
-    <meta property="og:title" content="Echoes Daily - Notes to your future self">
+    <meta property="og:title" content="Echoes Daily: notes to your future self, daily reminder app">
     <meta property="og:description" content="A personal library for the things worth remembering. Check in daily with a short list drawn from your own words. No streaks, no score, no guilt.">
     <meta property="og:url" content="https://echoesdaily.app/">
-    <meta property="og:image" content="https://echoesdaily.app/og-image.png">
-    <meta property="og:image:alt" content="The Echoes app icon">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Echoes Daily - Notes to your future self">
+    <meta property="og:image" content="https://echoesdaily.app/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Echoes Daily: notes to your future self">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Echoes Daily: notes to your future self, daily reminder app">
     <meta name="twitter:description" content="A personal library for the things worth remembering. Check in daily with a short list drawn from your own words.">
-    <meta name="twitter:image" content="https://echoesdaily.app/og-image.png">
+    <meta name="twitter:image" content="https://echoesdaily.app/og-card.png">
 
     <script type="application/ld+json">
     {
@@ -30,7 +34,27 @@
                 "name": "Echoes Daily",
                 "url": "https://echoesdaily.app/",
                 "logo": "https://echoesdaily.app/og-image.png",
-                "founder": { "@type": "Person", "name": "Jeff Peck" }
+                "founder": {
+                    "@type": "Person",
+                    "name": "Jeff Peck"
+                },
+                "@id": "https://echoesdaily.app/#organization",
+                "email": "support@echoesdaily.app",
+                "sameAs": [
+                    "https://apps.apple.com/us/app/echoes-daily/id6764227814"
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "headline": "Echoes Daily: notes to your future self, daily reminder app",
+                "name": "Echoes Daily: notes to your future self, daily reminder app",
+                "url": "https://echoesdaily.app/",
+                "mainEntityOfPage": "https://echoesdaily.app/",
+                "image": "https://echoesdaily.app/og-card.png",
+                "description": "A personal app for iPhone, iPad, and Mac for the things worth remembering. Build a library of Echoes and get a short daily list drawn from your own words.",
+                "publisher": {
+                    "@id": "https://echoesdaily.app/#organization"
+                }
             },
             {
                 "@type": "SoftwareApplication",
@@ -41,11 +65,27 @@
                 "url": "https://echoesdaily.app/",
                 "downloadUrl": "https://apps.apple.com/us/app/echoes-daily/id6764227814",
                 "image": "https://echoesdaily.app/og-image.png",
-                "author": { "@type": "Person", "name": "Jeff Peck" },
+                "author": {
+                    "@type": "Person",
+                    "name": "Jeff Peck"
+                },
                 "offers": [
-                    { "@type": "Offer", "name": "Echoes", "price": "0", "priceCurrency": "USD" },
-                    { "@type": "Offer", "name": "Support Echoes (optional one-time purchase)", "price": "5.99", "priceCurrency": "USD" }
-                ]
+                    {
+                        "@type": "Offer",
+                        "name": "Echoes",
+                        "price": "0",
+                        "priceCurrency": "USD"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Support Echoes (optional one-time purchase)",
+                        "price": "5.99",
+                        "priceCurrency": "USD"
+                    }
+                ],
+                "publisher": {
+                    "@id": "https://echoesdaily.app/#organization"
+                }
             },
             {
                 "@type": "FAQPage",
@@ -53,22 +93,34 @@
                     {
                         "@type": "Question",
                         "name": "Do I have to write everything myself?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Yes, and that's the point. Every Echo is something you wrote yourself: things you have learned, quotes that have stayed with you, values you want to keep close. There's no suggested content and no default library. Start with three or four and add more as they come to you." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, and that's the point. Every Echo is something you wrote yourself: things you have learned, quotes that have stayed with you, values you want to keep close. There's no suggested content and no default library. Start with three or four and add more as they come to you."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "What devices does it need?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "iPhone or iPad running iOS 18.6 or later, or a Mac with Apple silicon. iCloud sync keeps your library and today's list the same on all of them." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "iPhone or iPad running iOS 18.6 or later, or a Mac with Apple silicon. iCloud sync keeps your library and today's list the same on all of them."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "Where does my data live?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "On your device and in your own iCloud account. There's no account to create, no analytics, and no tracking. I never see your Echoes." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "On your device and in your own iCloud account. There's no account to create, no analytics, and no tracking. I never see your Echoes."
+                        }
                     },
                     {
                         "@type": "Question",
                         "name": "What does the $5.99 buy?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Support, not features. Every feature is free. The one-time Support Echoes purchase helps keep the app going and retires the occasional \"Remember to support this app.\" line on your list. No subscription." }
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Support, not features. Every feature is free. The one-time Support Echoes purchase helps keep the app going and retires the occasional \"Remember to support this app.\" line on your list. No subscription."
+                        }
                     }
                 ]
             }

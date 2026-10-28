@@ -1,0 +1,17 @@
+# Echoes Daily
+
+> A personal app for iPhone, iPad, and Mac for the things worth remembering. You build a library of Echoes in your own words, and each morning the app picks a short daily list from it. No streaks, no score, no history, no guilt.
+
+- Price: free, every feature. Optional one-time $5.99 "Support Echoes" purchase. No subscription.
+- Requires: iOS / iPadOS 18.6 or later, or a Mac with Apple silicon.
+- Privacy: no account, no analytics, no tracking. Data stays on your device and in your own iCloud.
+- Made by Jeff Peck, independently. Contact: support@echoesdaily.app
+
+## Pages
+
+- [Home](https://echoesdaily.app/): how it works, the philosophy, features, pricing, FAQ
+- [Echoes vs a journal (and vs habit trackers)](https://echoesdaily.app/vs/)
+- [Changelog](https://echoesdaily.app/changelog/)
+- [Privacy Policy](https://echoesdaily.app/privacy/)
+- [Support](https://echoesdaily.app/support/)
+- [App Store](https://apps.apple.com/us/app/echoes-daily/id6764227814)

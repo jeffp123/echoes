@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echoes for iOS</title>
-    <meta name="description" content="A personal iOS app for the things worth remembering. Build a library of Echoes and get a short daily list drawn from your own words.">
+    <title>Echoes Daily - Notes to your future self, a daily reminder app</title>
+    <meta name="description" content="A personal app for iPhone, iPad, and Mac for the things worth remembering. Build a library of Echoes and get a short daily list drawn from your own words.">
+    <link rel="canonical" href="https://echoesdaily.app/">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Echoes Daily">
+    <meta property="og:title" content="Echoes Daily - Notes to your future self">
+    <meta property="og:description" content="A personal library for the things worth remembering. Check in daily with a short list drawn from your own words. No streaks, no score, no guilt.">
+    <meta property="og:url" content="https://echoesdaily.app/">
+    <meta property="og:image" content="https://echoesdaily.app/og-image.png">
+    <meta property="og:image:alt" content="The Echoes app icon">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Echoes Daily - Notes to your future self">
+    <meta name="twitter:description" content="A personal library for the things worth remembering. Check in daily with a short list drawn from your own words.">
+    <meta name="twitter:image" content="https://echoesdaily.app/og-image.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "Echoes Daily",
+                "url": "https://echoesdaily.app/",
+                "logo": "https://echoesdaily.app/og-image.png",
+                "founder": { "@type": "Person", "name": "Jeff Peck" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "name": "Echoes Daily",
+                "description": "A personal library for the things worth remembering. Check in daily with a short list drawn from your own words.",
+                "applicationCategory": "LifestyleApplication",
+                "operatingSystem": "iOS 18.6 or later, iPadOS 18.6 or later, macOS on Apple silicon",
+                "url": "https://echoesdaily.app/",
+                "downloadUrl": "https://apps.apple.com/us/app/echoes-daily/id6764227814",
+                "image": "https://echoesdaily.app/og-image.png",
+                "author": { "@type": "Person", "name": "Jeff Peck" },
+                "offers": [
+                    { "@type": "Offer", "name": "Echoes", "price": "0", "priceCurrency": "USD" },
+                    { "@type": "Offer", "name": "Support Echoes (optional one-time purchase)", "price": "5.99", "priceCurrency": "USD" }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Do I have to write everything myself?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Yes, and that's the point. Every Echo is something you wrote yourself: things you have learned, quotes that have stayed with you, values you want to keep close. There's no suggested content and no default library. Start with three or four and add more as they come to you." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What devices does it need?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "iPhone or iPad running iOS 18.6 or later, or a Mac with Apple silicon. iCloud sync keeps your library and today's list the same on all of them." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Where does my data live?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "On your device and in your own iCloud account. There's no account to create, no analytics, and no tracking. I never see your Echoes." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What does the $5.99 buy?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Support, not features. Every feature is free. The one-time Support Echoes purchase helps keep the app going and retires the occasional \"Remember to support this app.\" line on your list. No subscription." }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -14,6 +82,7 @@
     <div class="site-nav-inner">
         <a href="." class="logo">Echoes</a>
         <div class="nav-links">
+            <a href="#pricing">Pricing</a>
             <a href="support/">Support</a>
             <a href="privacy/">Privacy</a>
         </div>
@@ -21,14 +90,35 @@
 </nav>
 
 <div class="hero">
-    <img src="icon.svg" alt="Echoes" class="hero-icon" width="108" height="108">
+    <img src="icon.svg" alt="Echoes app icon: notes to your future self" class="hero-icon" width="108" height="108">
     <h1>Notes to your<br>future self.</h1>
     <p>A personal iOS app for the things worth remembering. Build a library of Echoes and get a short daily list drawn from your own words.</p>
     <a href="https://apps.apple.com/us/app/echoes-daily/id6764227814" class="appstore-btn" target="_blank" rel="noopener">Download on the App Store</a>
-    <p class="hero-note">Free for iPhone &middot; iOS 18 or later</p>
+    <p class="hero-note">Free for iPhone, iPad, and Mac &middot; iCloud sync included &middot; <a href="#pricing">Optional $5.99 to support it</a></p>
+    <p class="hero-note"><a href="privacy/">No account. No tracking. Your Echoes live on your device and in your iCloud.</a></p>
+    <p class="hero-secondary"><a href="#how-it-works">See how it works &darr;</a></p>
 </div>
 
-<div class="section">
+<div class="section screenshots-section">
+    <div class="section-inner">
+        <div class="screenshots">
+            <figure>
+                <img src="screenshots/today.png" alt="Today's Echoes: a short checklist of reminders like &quot;A short walk can shift your whole mood&quot;, with three already checked off" width="390" height="844" loading="lazy">
+                <figcaption>Today's list, your own words</figcaption>
+            </figure>
+            <figure>
+                <img src="screenshots/done.png" alt="The done screen: &quot;You've checked off everything for today.&quot;" width="390" height="844" loading="lazy">
+                <figcaption>Check it off, nothing tracked</figcaption>
+            </figure>
+            <figure>
+                <img src="screenshots/library.png" alt="Manage Echoes: the library, each Echo with its frequency, like Daily, Often, or Every few days" width="390" height="844" loading="lazy">
+                <figcaption>Your library, each Echo with its own frequency</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="how-it-works">
     <div class="section-inner">
         <h2>How it works</h2>
         <p class="lead">Three simple ideas, nothing more.</p>
@@ -83,6 +173,27 @@
     </div>
 </div>
 
+<!--
+    Testimonials (audit action: "Collect and publish the first 10 user stories with faces", D3.2 / D3.1 / D3.5).
+    TODO(Jeff): collect real one-line quotes from early users (first name, context like "journaler" or
+    "recovering Streaks user", a specific outcome, and a photo), then fill this in and remove `hidden`.
+    Once any credible third-party mention exists, add a dated "As seen in" line under the quotes.
+-->
+<div class="section" hidden>
+    <div class="section-inner">
+        <h2>From people using Echoes</h2>
+        <div class="quotes">
+            <!--
+            <figure class="quote">
+                <img src="people/NAME.jpg" alt="" width="48" height="48">
+                <blockquote>QUOTE</blockquote>
+                <figcaption>FIRST NAME, CONTEXT</figcaption>
+            </figure>
+            -->
+        </div>
+    </div>
+</div>
+
 <div class="section">
     <div class="section-inner">
         <h2>Features</h2>
@@ -99,13 +210,76 @@
     </div>
 </div>
 
+<div class="section section-alt" id="pricing">
+    <div class="section-inner">
+        <h2>Pricing</h2>
+        <p class="lead">Echoes is free. Every feature, no subscription.</p>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Echoes</h3>
+                <p class="price">Free</p>
+                <p>Everything on this page: your library, today's list, frequency settings, iCloud sync, notifications, import and export.</p>
+            </div>
+            <div class="price-card">
+                <h3>Support Echoes</h3>
+                <p class="price">$5.99 <span>one time</span></p>
+                <p>If you want to support development, there's a one-time $5.99 "Support Echoes" purchase. Less than a coffee, no unlock, nothing held back. It just retires the occasional "Remember to support this app." line on your list.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="faq">
+    <div class="section-inner">
+        <h2>Questions</h2>
+        <div class="faq">
+            <details>
+                <summary>Do I have to write everything myself?</summary>
+                <p>Yes, and that's the point. Every Echo is something you wrote yourself: things you have learned, quotes that have stayed with you, values you want to keep close. There's no suggested content and no default library. Start with three or four and add more as they come to you.</p>
+            </details>
+            <details>
+                <summary>What devices does it need?</summary>
+                <p>iPhone or iPad running iOS 18.6 or later, or a Mac with Apple silicon. iCloud sync keeps your library and today's list the same on all of them.</p>
+            </details>
+            <details>
+                <summary>Where does my data live?</summary>
+                <p>On your device and in your own iCloud account. There's no account to create, no analytics, and no tracking. I never see your Echoes. The <a href="privacy/">privacy policy</a> has the details.</p>
+            </details>
+            <details>
+                <summary>What does the $5.99 buy?</summary>
+                <p>Support, not features. Every feature is free. The one-time Support Echoes purchase helps keep the app going and retires the occasional "Remember to support this app." line on your list. No subscription.</p>
+            </details>
+        </div>
+    </div>
+</div>
+
+<div class="section section-alt">
+    <div class="section-inner founder">
+        <!-- TODO(Jeff): add a photo at founder.jpg and uncomment.
+        <img src="founder.jpg" alt="Jeff Peck" class="founder-photo" width="96" height="96">
+        -->
+        <div>
+            <h2>Made by one person</h2>
+            <!-- TODO(Jeff): replace this paragraph with your one-line "why I built this" story, in your own words. -->
+            <p>I'm Jeff Peck. I build and support Echoes myself, independently. If you have a question or an idea, I read every message.</p>
+            <p class="founder-links">
+                <a href="mailto:jeff@echoesdaily.app">jeff@echoesdaily.app</a>
+                <a href="support/">Support form</a>
+                <!-- TODO(Jeff): add a personal X / LinkedIn / Mastodon link here. -->
+            </p>
+        </div>
+    </div>
+</div>
+
 <footer>
     <div class="footer-links">
+        <a href="vs/">Echoes vs a journal</a>
+        <a href="changelog/">Changelog</a>
         <a href="privacy/">Privacy Policy</a>
         <a href="support/">Support</a>
         <a href="terms/">Terms of Use</a>
     </div>
-    <p>&copy; 2026 Jeff Peck. Echoes is an independent iOS app.</p>
+    <p>&copy; 2026 Jeff Peck. Echoes is an independent app for iPhone, iPad, and Mac.</p>
 </footer>
 
 </body>

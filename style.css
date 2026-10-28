@@ -42,10 +42,12 @@ a:hover { text-decoration: underline; }
     font-weight: 700;
     font-size: 1.05rem;
     letter-spacing: -0.01em;
+    display: inline-block;
+    padding: 12px 0;
 }
 .site-nav .logo:hover { text-decoration: none; }
-.nav-links { display: flex; gap: 24px; }
-.nav-links a { color: rgba(255,255,255,0.55); font-size: 0.9rem; }
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: rgba(255,255,255,0.55); font-size: 0.9rem; display: inline-block; padding: 12px 2px; }
 .nav-links a:hover { color: #fff; text-decoration: none; }
 
 /* Hero */
@@ -99,6 +101,10 @@ a:hover { text-decoration: underline; }
     color: rgba(255,255,255,0.35);
     margin-bottom: 0;
 }
+.hero-note a { color: rgba(255,255,255,0.55); text-decoration: underline; text-underline-offset: 2px; }
+.hero-note a:hover { color: #fff; }
+.hero .hero-secondary { margin: 20px auto 0; font-size: 0.95rem; }
+.hero-secondary a { color: var(--accent); display: inline-block; padding: 10px 4px; }
 
 /* Sections */
 .section { padding: 60px 20px; }
@@ -167,6 +173,40 @@ a:hover { text-decoration: underline; }
 .principle h3 { font-size: 1rem; font-weight: 600; margin-bottom: 3px; }
 .principle p { margin: 0; color: var(--text-light); font-size: 0.9rem; }
 
+/* Screenshots */
+.screenshots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 600px) { .screenshots { grid-template-columns: 1fr; max-width: 280px; margin: 0 auto; } }
+.screenshots figure { margin: 0; text-align: center; }
+.screenshots img { width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--border); }
+.screenshots figcaption { margin-top: 8px; font-size: 0.875rem; color: var(--text-light); }
+
+/* Pricing */
+.pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 500px) { .pricing { grid-template-columns: 1fr; } }
+.price-card {
+    padding: 20px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+.price-card h3 { font-size: 1rem; font-weight: 600; }
+.price-card .price { font-size: 1.5rem; font-weight: 700; margin: 4px 0 8px; color: var(--text); }
+.price-card .price span { font-size: 0.85rem; font-weight: 400; color: var(--text-muted); }
+.price-card p { color: var(--text-light); font-size: 0.9rem; margin: 0; }
+
+/* FAQ */
+.faq { margin-top: 24px; border-top: 1px solid var(--border); }
+.faq details { border-bottom: 1px solid var(--border); }
+.faq summary { cursor: pointer; font-weight: 600; padding: 14px 0; min-height: 44px; }
+.faq details p { color: var(--text-light); font-size: 0.95rem; padding-bottom: 16px; margin: 0; }
+
+/* Founder */
+.founder { display: flex; gap: 20px; align-items: flex-start; }
+.founder-photo { flex-shrink: 0; width: 96px; height: 96px; border-radius: 50%; object-fit: cover; }
+.founder p { color: var(--text-light); margin-top: 8px; }
+.founder-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.founder-links a { display: inline-block; padding: 10px 0; }
+
 /* Footer */
 footer {
     background: var(--header-bg);
@@ -176,7 +216,7 @@ footer {
     font-size: 0.85rem;
 }
 .footer-links { margin-bottom: 10px; display: flex; justify-content: center; flex-wrap: wrap; gap: 0; }
-.footer-links a { color: rgba(255,255,255,0.6); padding: 0 14px; }
+.footer-links a { color: rgba(255,255,255,0.6); padding: 14px; margin: 2px 0; line-height: 1.2; }
 .footer-links a + a { border-left: 1px solid rgba(255,255,255,0.12); }
 .footer-links a:hover { color: #fff; text-decoration: none; }
 
@@ -213,6 +253,7 @@ footer {
 }
 .prose li { margin-bottom: 6px; }
 .prose a { color: var(--accent-dark); }
+.prose .appstore-btn { color: #0a1520; }
 .prose strong { color: var(--text); }
 .prose h3 {
     font-size: 1rem;
